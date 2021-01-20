@@ -8,49 +8,58 @@
         src: url("https://fonts.googleapis.com/css?family=Lato:300,400,900,900i");
     }
     button {
-        @apply py-2 px-4 font-semibold rounded-lg shadow-md bg-blue-400;
+        @apply py-2 px-4 text-white font-semibold rounded-lg shadow-md bg-blue-400;
     }
     * {
         @apply box-border;
     }
     body {
-        @apply bg-gray-100 font-lato;
+        @apply bg-gray-200 font-sans;
     }
     
     .wrapper {
-        @apply max-w-xl bg-white m-12 flex flex-col p-12;
+        @apply container max-w-xl  bg-white mx-auto mt-24   flex-1 flex-col p-12 ;
 
     }
+    .header {
+        @apply flex justify-start items-center mb-4;
+      }
 
     .title {
-        @apply self-start text-5xl font-light placeholder-black m-7;
+        @apply self-start text-2xl font-light text-gray-700 my-2;
     }
+
 
     .todoInput {
-        @apply w-full flex justify-between m-7;
+        @apply w-full flex justify-between my-6;
     }
+    .todoInput .submitBtn {
+        @apply outline-none;
+      }
 
     input {
-        @apply w-9/12 m-6 pt-4 pl-4 pb-4 rounded border-2 border-gray-400;
+        @apply w-9/12 mr-6  pl-4  rounded-lg bg-white border-gray-400 border  block w-full appearance-none ;
     }
+
     ul {
-        @apply list-none m-12;
+        @apply list-none my-2;
     }
     
     li {
-        @apply font-light py-5 border-2 border-gray-400 flex justify-between;
+        @apply font-light py-3 border-t border-gray-400 flex justify-between;
     }
     
     .logo-container {
-        @apply m-6;
+        @apply mt-6;
     }
     
     img {
-        @apply h-6;
+        @apply h-6 w-6;
     }
     
+
     button.action {
-        @apply placeholder-black bg-none p-0;
+        @apply text-gray-600 bg-gray-200 p-0;
     }
     
     button.action:focus {
